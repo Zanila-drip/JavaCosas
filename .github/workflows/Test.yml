@@ -1,6 +1,6 @@
 name: Test.yml
 on:
-  [push]
+  [ push ]
 
 
 
@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v6.0.2
       - name: ls
         run: |
           chmod +x script.sh
