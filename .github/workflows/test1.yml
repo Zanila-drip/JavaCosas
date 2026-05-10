@@ -1,5 +1,13 @@
 name: Hola mundo
-on: [push,pull_request]
+on:
+    push:
+      branches:
+        - main
+        - pr
+        - master
+    pull_request:
+      branches:
+        - main
 
 jobs:
 
